@@ -1,0 +1,17 @@
+{%- if page.layout == "page" -%}
+<ul>
+    <p class="desktop-none">Main Menu</p>
+    {%- for nav_link in site.data.general.nav_link -%}
+    <li><a href="{{ nav_link.url }}"><i class="{{ nav_link.icon }}"></i>{{ nav_link.name }}</a></li>
+    {%- endfor -%}
+</ul>
+{%- else -%}
+<nav>
+    <h3>Main Menu</h3>
+    <ul>
+        {%- for nav_link in site.data.general.nav_link -%}
+        <li><a href="{{ nav_link.url }}"><i class="{{ nav_link.icon }}"></i>{{ nav_link.name }}</a></li>
+        {%- endfor -%} 
+    </ul>
+</nav>
+{%- endif -%}

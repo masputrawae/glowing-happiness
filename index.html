@@ -1,0 +1,49 @@
+---
+layout: page
+title: Home
+---
+<div class="hero">
+    <h1>{{ site.data.general.hero_section.welcome }}</h1>
+    <p>{{ site.data.general.hero_section.paragraph }}</p>
+    <div class="cta">
+        <a href="#skill_intro"><i class="bi-chevron-double-down"></i>Explore</a>
+        {% assign discord = site.data.general.social | where: "name", "discord" | first %}
+        {% if discord %}
+        <a href="{{ discord.url }}" target="{{ discord.target | default: '_self' }}"><i class="{{ discord.icon }}"></i>Join Discord</a>
+        {% endif %}
+    </div>
+</div>
+<div id="skill_intro">
+    <div>
+        <h2>{{ site.data.general.skill_intro.welcome }}</h2>
+        <p>{{ site.data.general.skill_intro.paragraph }}</p>
+    </div>
+    {%- for skill in site.data.general.skill -%}
+        <div class="card card__skill">
+            <h3>{{ skill.name }}</h3>
+            <img src="https://placehold.co/100" alt="">
+            <p>{{ skill.content }}</p>
+        </div>
+    {%- endfor -%}
+</div>
+<div id="blog_intro">
+    <div>
+        <h2>{{ site.data.general.blog_intro.welcome }}</h2>
+        <p>{{ site.data.general.blog_intro.paragraph }}</p>
+    </div>
+    {% assign categories = site.categories %}
+    {% for category in categories %}
+    <div class="card">
+        <h3>{{ category[0] }}</h3>
+        <div class="blog__card-category flex-justify">
+            {% for post in category[1] %}
+            <article class="blog__card-item">
+                <h4>{{ post.title }}</h4>
+                <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                <a href="{{ post.url | relative_url }}">Read more...</a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

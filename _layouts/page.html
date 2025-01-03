@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="page">
+    <header>
+        {%- include brand.html -%}
+        <nav>
+            <button class="btn btn-primary desktop-none" id="btnNavMenuOpen"><i class="bi-list"></i></button>
+            <div id="navMenu">
+                <button class="btn btn-primary desktop-none" id="btnNavMenuClose"><i class="bi-x"></i></button>
+                {%- include nav_menu.html -%}
+            </div>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    {%- include footer.html -%}
+</div>

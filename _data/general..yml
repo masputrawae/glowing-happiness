@@ -1,0 +1,96 @@
+bio:
+  name: "Putra Jaya"
+  address: "Di sudut galaksi, nebula sebelah, kadang-kadang muncul di Bumi buat ngisi pulsa. 👽"  
+  intro: "Seorang makhluk luar angkasa yang sedang menyamar jadi developer web. Masih suka salah ngetik `htlm` sama `cos` di terminal. 🚀"
+  avatar: https://avatars.githubusercontent.com/u/180821929?v=4
+  email: "masputrawae.official@gmail.com"
+social:
+  - name: "facebook"
+    icon: "bi-facebook"
+    url: "https://www.facebook.com/profile.php?id=61566134978045"
+  - name: "twitter"
+    icon: "bi-twitter-x"
+    url: "https://x.com/Masputrawae"
+  - name: "instagram"
+    icon: "bi-instagram"
+    url: "https://www.instagram.com/masputrawae/"
+  - name: "youtube"
+    icon: "bi-youtube"
+    url: "https://www.youtube.com/@masputrawae"
+  - name: "github"
+    icon: "bi-github"
+    url: "https://github.com/masputrawae/"
+  - name: "discord"
+    icon: "bi-discord"
+    url: "https://discord.gg/nM4EP8DJFZ"
+  - name: "rss-feed"
+    icon: "bi-rss"
+    url: "/feed.xml"
+
+# For About, Project & Portfolio Section
+about_intro:
+  welcome: "Selamat datang di dunia absurd!"
+  paragraph: "Aku adalah makhluk yang nyasar ke dunia coding. Kadang nulis kode, kadang nulis pesan error. Hobi utama: menatap layar sambil berharap bug ilang sendiri."
+
+portfolio:
+  welcome: "Karya Spektakuler (Katanya)"
+  paragraph: "Ini dia beberapa karya hasil perjuangan panjang, kopi, dan pertanyaan eksistensial: 'Kenapa margin gak jalan?' Jangan tanya berapa kali refresh ya."
+
+project:
+  welcome: "Proyek-Proyek yang Katanya Revolusioner 🚀"
+  paragraph: "Dari web simpel sampai yang bikin kepala ngebul. Semua proyek ini lahir dari campuran skill, keberuntungan, dan hasil Googling tengah malam."
+
+# For Hero Section
+hero_section:
+  welcome: "Selamat datang di dunia coding yang penuh keajaiban (dan bug)!"
+  paragraph: "Siapkan dirimu untuk petualangan ngoding yang penuh dengan tantangan, error, dan beberapa meme lucu. Jangan khawatir, kita bakal hadapi semua ini bersama, termasuk 'Failed to load resource'!"
+
+blog_intro:
+  welcome: "Blog Absurd dengan Segudang Insight (dan Meme)"
+  paragraph: "Tempat curhat tentang coding, dari yang serius sampai yang bikin ketawa. Tips, trik, dan pengalaman pribadi yang sering kali diakhiri dengan kalimat: 'Jangan ditiru.'"
+
+skill_intro:
+  welcome: "Skill Level Dewa (Atau Dewa Ngoding Palsu?)"
+  paragraph: "Dari HTML sampai skill copy-paste tingkat tinggi. Siap membantu memperbaiki website... atau minimal bikin error yang beda."
+
+skill:
+  - name: "HTML, CSS"
+    content: "Mampu membuat web dari nol, tapi ujung-ujungnya tetep googling 'cara buat div di tengah'."
+    img: /assets/img/skill/html-css.webp
+    
+  - name: "Python"
+    content: "Masih tahap kenalan, sering manggil 'Hello World' doang. Katanya sih nanti bisa bikin AI, padahal print doang. 🤖"
+    img: /assets/img/skill/python.webp
+    
+  - name: "PHP"
+    content: "Pernah bikin form kontak, tapi lupa kasih validasi. Sekarang jadi spesialis error 'undefined index'."
+    img: /assets/img/skill/php.webp
+    
+  - name: "Javascript"
+    content: "Bisa bikin alert popup yang bikin temen-temen panik. Codingnya? 50% copy paste, 50% panik juga."
+    img: /assets/img/skill/javascript.webp
+    
+  - name: "Ilmu Copy Paste"
+    content: "Level Grandmaster! Menemukan kode dari Stack Overflow lebih cepat daripada kilat. Tapi tetep lupa baca dokumentasi."
+    img: /assets/img/skill/copy-paste.webp
+
+nav_link:
+  - name: "Home"
+    icon: "bi-house-door"
+    url: "/"
+    
+  - name: "Blog"
+    icon: "bi-journal-text"
+    url: "/blog.html"
+    
+  - name: "Portfolio"
+    icon: "bi-briefcase"
+    url: "/portfolio.html"
+    
+  - name: "About"
+    icon: "bi-person"
+    url: "/about.html"
+    
+  - name: "Help"
+    icon: "bi-info"
+    url: "/help.html"

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="post">
+    <!-- LEFT SIDE -->
+    <aside id="leftSide">
+        <button class="btn btn-primary desktop-none" id="btnLeftSideClose"><i class="bi-x"></i></button>
+        {%- include brand.html -%}
+        {%- include nav_menu.html -%}
+        {%- include components/search.html -%}
+    </aside>
+    <!-- LEFT SIDE -->
+    
+    <div class="post-main">
+        <div class="content">
+            <header>
+                <div class="top-nav">
+                    <button class="btn" id="btnLeftSide"><i class="bi-list"></i></button>
+                    <button class="btn" id="btnOpenToc"><i class="bi-book"></i></button>
+                </div>
+                <div class="post-info">
+                    <p>
+                        <span>Author: {{ page.author | default: site.author }}</span><br>
+                        {%- if page.description -%}
+                        <span>{{ page.description }}</span><br>
+                        {%- endif -%}
+                        <span><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}">Publish on: {{ page.date | date: "%d %B %Y" }}</time></span><br>
+                        {%- if page.last_modified_at -%}
+                        <span><time datetime="{{ page.last_modified_at | date: '%Y-%m-%dT%H:%M:%S' }}">Last modified on: {{ page.last_modified_at | date: "%d %B %Y" }}</time></span>
+                        {%- endif -%}
+                    </p>
+                    {%- if page.image -%}
+                    <figure class="post-image">
+                        <img src="{{ page.image }}" alt="Image related to {{ page.title }} showcasing {{ page.image_caption | default: 'the content' }}">
+                    </figure>
+                    {%- endif -%}
+                </div>
+            </header>
+    
+            <main>
+                <article>
+                    {%- include components/anchor_headings.html html=content anchorBody="<i class='bi-card-heading'></i>" -%}
+                </article>
+            </main>
+
+        </div>
+        <aside id="rightSide">
+            <button class="btn btn-primary" id="btnRightSideClose"><i class="bi-x"></i></button>
+            <nav>
+                <div class="toc">
+                    {%- include components/toc.html html=content -%}
+                </div>
+                <ul class="tag-related">
+                    {% for tag in page.tags %}
+                      <li><a href="{{ site.baseurl }}/tag/{{ tag }}"><i class="bi-tag"></i>{{ tag }}</a></li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    {%- include footer.html -%}
+</div>

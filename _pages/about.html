@@ -1,0 +1,16 @@
+---
+layout: page
+title: About
+permalink: /about.html
+---
+<div class="about">
+    <img src="{{ site.data.general.bio.avatar }}" alt="{{ site.data.general.bio.name }}'s Avatar" class="about__avatar">
+    <div class="info">
+        <h1>{{ site.data.general.bio.name }}</h1>
+        <p>{{ site.data.general.bio.intro }}</p>
+        <address>
+            <p>{{ site.data.general.bio.address }}</p>
+        </address>
+        <a href="mailto:{{ site.data.general.bio.email }}" aria-label="Send an email to {{ site.data.general.bio.name }}">{{ site.data.general.bio.email }}</a>
+    </div>
+</div>

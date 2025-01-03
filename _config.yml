@@ -1,0 +1,58 @@
+# ===============[] Base Setting
+title: "My Notes"
+description: "Ea Lorem proident in in sit sit et."
+logo: /assets/img/logo/logo.png
+owner: "Putra Jaya"
+author: "Putra Jaya"
+slogan: "Tempat Berbagi Keluh Kesah"
+
+url: ""
+baseurl: ""
+
+lang: "id"
+timezone: Asia/Jakarta
+data_theme: "dark"
+# ===============[] 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:title/"
+      toc: true
+
+collections:
+  projects:
+    output: true
+  pages:
+    output: true
+
+# Tags
+tag_page_layout: tags
+tag_page_dir: tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - drafts
+  - .sass-cache/
+  - .jekyll-cache/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM 
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    disable : false
+    line_numbers: false
+    bold_every: 5
+
+# ============[]
